@@ -13,7 +13,10 @@ for [tracking element modification](http://thebuildingcoder.typepad.com/blog/201
 
 ## Enhancement &ndash; Automatic Snapshots and Cloud Storage
 
-Cf. [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) for in-depth discussions on the cloud storage aspects.
+This project implements
+the [TrackChanges enhancement suggestion](https://github.com/jeremytammik/TrackChanges#enhancement)
+makin guse of the cloud storage approach developed for
+the [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) project.
 
 
 ## Author
