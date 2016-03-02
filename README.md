@@ -15,7 +15,7 @@ for [tracking element modification](http://thebuildingcoder.typepad.com/blog/201
 
 This project implements
 the [TrackChanges enhancement suggestion](https://github.com/jeremytammik/TrackChanges#enhancement)
-makin guse of the cloud storage approach developed for
+making use of the cloud storage approach developed for
 the [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) project.
 
 
