@@ -11,7 +11,7 @@ the detailed article about the initial TrackChanges implementation
 for [tracking element modification](http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html).
 
 
-## Enhancement &ndash; Aumatic Snapshots and Cloud Storage
+## Enhancement &ndash; Automatic Snapshots and Cloud Storage
 
 Cf. [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) for in-depth discussions on the cloud storage aspects.
 
