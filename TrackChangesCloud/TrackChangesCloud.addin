@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Command">
-    <Text>Command TrackChangesCloud</Text>
-    <Description>Some description for TrackChangesCloud</Description>
+    <Text>Track Changes</Text>
+    <Description>This command toogles between starting and ending modification tracking</Description>
     <Assembly>TrackChangesCloud.dll</Assembly>
     <FullClassName>TrackChangesCloud.Command</FullClassName>
     <ClientId>93bba244-ca4b-42ea-8d6f-ec3f5c095c2e</ClientId>
@@ -10,7 +10,7 @@
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
   <AddIn Type="Application">
-    <Name>Application TrackChangesCloud</Name>
+    <Name>TrackChangesCloud</Name>
     <Assembly>TrackChangesCloud.dll</Assembly>
     <FullClassName>TrackChangesCloud.App</FullClassName>
     <ClientId>5653591b-6c44-4346-b1d0-5bdb78f5bbd3</ClientId>

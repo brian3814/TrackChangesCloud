@@ -75,11 +75,10 @@ namespace TrackChangesCloud
     #endregion // SetFocusToRevit
 
     /// <summary>
-    /// Repeatedly check database status and raise 
-    /// external event when updates are pending.
-    /// Relinquish control and wait for timeout
-    /// period between each attempt. Run in a 
-    /// separate thread.
+    /// Trigger a modification tracker snapshot at 
+    /// regular intervals. Relinquish control and wait 
+    /// for the specified timeout period between each 
+    /// snapshot. This method runs in a separate thread.
     /// </summary>
     static void TriggerModificationLogger()
     {
@@ -94,9 +93,10 @@ namespace TrackChangesCloud
         _event.Raise();
 
         // Set focus to Revit for a moment.
-        // Otherwise, it may take a while before 
-        // Revit forwards the event Raise to the
-        // event handler Execute method.
+        // Without this, Revit will not forward the 
+        // event Raise to the external event handler 
+        // Execute method until the Revit window is
+        // activated. This causes the screen to flash.
 
         SetFocusToRevit();
 
@@ -119,14 +119,17 @@ namespace TrackChangesCloud
       object sender, 
       ApplicationInitializedEventArgs e )
     {
+      // Create our custom external event.
+
       _event = ExternalEvent.Create( 
         new ModificationLogger() );
 
-        _thread = new Thread(
-          TriggerModificationLogger );
+      // Start a thread to raise it regularly.
 
-        _thread.Start();
+      _thread = new Thread(
+        TriggerModificationLogger );
 
+      _thread.Start();
     }
 
     public Result OnShutdown( UIControlledApplication a )
