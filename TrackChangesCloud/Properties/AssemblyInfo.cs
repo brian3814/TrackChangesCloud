@@ -43,6 +43,7 @@ using System.Runtime.InteropServices;
 // TrackChangesCloud History:
 //
 // 2016.0.0.4 2016-03-02 copied TrackChanges history and incremented version number
+// 2016.0.0.5 2016-03-03 implemented external event and separate thread to drive it
 //
-[assembly: AssemblyVersion( "2016.0.0.4" )]
-[assembly: AssemblyFileVersion( "2016.0.0.4" )]
+[assembly: AssemblyVersion( "2016.0.0.5" )]
+[assembly: AssemblyFileVersion( "2016.0.0.5" )]
