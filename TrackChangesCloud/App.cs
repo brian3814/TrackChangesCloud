@@ -86,8 +86,8 @@ namespace TrackChangesCloud
       {
         ++_nSnapshots;
 
-        Util.Log( string.Format( 
-          "TriggerModificationLogger snapshot {0}", 
+        Util.Log( string.Format(
+          "TriggerModificationLogger snapshot {0}",
           _nSnapshots ) );
 
         _event.Raise();
@@ -109,19 +109,19 @@ namespace TrackChangesCloud
 
     public Result OnStartup( UIControlledApplication a )
     {
-      a.ControlledApplication.ApplicationInitialized 
+      a.ControlledApplication.ApplicationInitialized
         += OnApplicationInitialized;
 
       return Result.Succeeded;
     }
 
-    void OnApplicationInitialized( 
-      object sender, 
+    void OnApplicationInitialized(
+      object sender,
       ApplicationInitializedEventArgs e )
     {
       // Create our custom external event.
 
-      _event = ExternalEvent.Create( 
+      _event = ExternalEvent.Create(
         new ModificationLogger() );
 
       // Start a thread to raise it regularly.
