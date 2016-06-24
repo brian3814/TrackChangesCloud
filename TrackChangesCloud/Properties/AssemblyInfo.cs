@@ -44,6 +44,7 @@ using System.Runtime.InteropServices;
 //
 // 2016.0.0.4 2016-03-02 copied TrackChanges history and incremented version number
 // 2016.0.0.4 2016-03-03 implemented external event and a separate thread to drive it
+// 2017.0.0.0 2016-06-24 flat migration to Revit 2017
 //
-[assembly: AssemblyVersion( "2016.0.0.4" )]
-[assembly: AssemblyFileVersion( "2016.0.0.4" )]
+[assembly: AssemblyVersion( "2017.0.0.0" )]
+[assembly: AssemblyFileVersion( "2017.0.0.0" )]

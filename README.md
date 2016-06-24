@@ -27,7 +27,7 @@ It takes just a few seconds to collect all specified data in bigger project and 
 
 Jeremy suggests:
 
-- Use the DMU. Make a note of the added, deleted and modified element ids, but do not process them unless a certain amount of time has passed.
+- Use the DMU in conjunction with a timer. Make a note of the added, deleted and modified element ids, but do not process them unless a certain amount of time has passed.
 - Use the DMU to capture the list of s, but do nothing else with them. Enhance the regular timer-based TrackChanges snapshot to process only the listed elements instead of the entire database. Run the TrackChanges snapshot as often as needed, but not more, e.g. only once a minute.
 
 
